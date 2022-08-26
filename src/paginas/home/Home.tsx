@@ -1,16 +1,31 @@
-import React from 'react';
-import'./Home.css';
+import { Box, Paper, Button } from "@mui/material"
+import './Home.css';
 
-function Home(){
-    return(
+function Home() {
+    return (
         <>
-            <h1>Home</h1>
-            <p className='lorem'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vero dolorum! Non et itaque suscipit saepe nostrum recusandae quos laborum, tenetur magnam ut fuga accusantium fugiat dolor odio ipsam laudantium?</p>
-            <br />
-            <p className='lorem'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vero dolorum! Non et itaque suscipit saepe nostrum recusandae quos laborum, tenetur magnam ut fuga accusantium fugiat dolor odio ipsam laudantium?</p>
+            <Paper>
+                <Box p={2} >
+                    <Box display="flex" justifyContent="center">
+                        <h1>Titulo</h1>
+                    </Box>
+                        <p>
+                            Testando
+                        </p>
+                    <Box>
+                        <Button variant="contained" color="secondary"> B1 </Button>
+                        <Button variant="contained" color="primary"> B2 </Button>
+                    </Box>
+                </Box>
+            </Paper>
         </>
+
+
+
     )
 }
 
 export default Home;
+
+
 
