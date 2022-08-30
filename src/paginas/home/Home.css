@@ -1,11 +1,15 @@
-.lorem{
-    width: 400px;
-    display: inline-block;
-    background-color: blue;
+.caixa{
+    background-color: #3F51B5;
 }
-.lorem:hover{
-    background-color: black;
-    color: white;
-    transition: all 0.6s ease-in;
- 
+.titulo{
+    color: white !important ;
+    font-weight: bold!important;
+}
+.botao{
+border:white!important;
+background: #3F51B5;
+color: white!important;
+}
+.postagens{
+    background-color: white!important;
 }
