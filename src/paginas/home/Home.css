@@ -6,9 +6,10 @@
     font-weight: bold!important;
 }
 .botao{
-border:white!important;
-background: #3F51B5;
+border: 2px white solid !important;
+background: #1a2149 !important;
 color: white!important;
+border-radius: 8px !important;
 }
 .postagens{
     background-color: white!important;

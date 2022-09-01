@@ -1,0 +1,14 @@
+.imagem2{
+    background-image: url(https://biocom.4vets.com.br/skin/frontend/argento/modelo/images/login/cadastro.png);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.texto2{
+    font-weight: bold !important;
+}
+.btnCancelar{
+    margin-right: 10% !important;
+}
