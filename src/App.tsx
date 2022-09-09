@@ -12,14 +12,17 @@ import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <div style={{ minHeight: '100vh' }}>
-        <Routes>
+    <Provider store={store}>
+      <Router>
+        <Navbar />
+
+        <div style={{ minHeight: '100vh' }}>
 
           <Route path="/" element={<Login />} />
 
@@ -44,13 +47,11 @@ function App() {
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
 
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
+        </div>
 
-
-        </Routes>
-      </div>
-      <Footer />
-
-    </Router>
+        <Footer />
+      </Router>
+    </Provider>
   );
 }
 
