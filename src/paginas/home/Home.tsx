@@ -3,10 +3,16 @@ import { Typography, Box, Grid, Button } from '@mui/material';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import './Home.css';
-import { useNavigate } from 'react-router';
-import useLocalStorage from 'react-use-localstorage';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
+import { useDispatch } from "react-redux";
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify'
+
+
+
+    
+
 
 function Home() {
 
@@ -17,11 +23,23 @@ function Home() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+             toast.error('Você precisa estar logado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            draggable: true,
+            theme: "colored",
+            progress: undefined,
+    });
             navigate("/login")
 
         }
     }, [token])
+
+
+    const dispatch = useDispatch();
+
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
