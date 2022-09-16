@@ -1,0 +1,13 @@
+.cursor{
+    cursor:pointer;
+    color: white;
+    
+}
+.text-decorator-none{
+    text-decoration: none;
+    
+}
+.container{
+    background-image: linear-gradient(#EC33B2 10%,
+    #000131 70%);
+}
