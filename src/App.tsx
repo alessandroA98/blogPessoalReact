@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
-import './App.css';
+import Footer from './components/estaticos/footer/Footer';
+import Navbar from './components/estaticos/navbar/Navbar';
 import ListaTema from './components/temas/listatema/ListaTema';
 import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
 import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
@@ -14,8 +15,8 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import Navbar from './components/estaticos/navbar/Navbar';
-import Footer from './components/estaticos/footer/Footer';
+import './App.css';
+
 
 function App() {
   return (
