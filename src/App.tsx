@@ -21,6 +21,7 @@ function App() {
   return (
     <Provider store={store}>
       <ToastContainer />
+      
       <Router>
         <Navbar />
 

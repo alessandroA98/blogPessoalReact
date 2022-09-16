@@ -1,10 +1,8 @@
 .box1 {
-    background-color: #3F51B5;
     height: 120px;
 }
 
 .box2 {
-    background-Color: #303F9F;
     height: 60px;
 }
 
@@ -15,4 +13,7 @@
 
 .texto {
     color: white;
+}
+.container-footer{
+    background-image: linear-gradient(to top, #EC33B2 1%,#000131 50%) !important;
 }

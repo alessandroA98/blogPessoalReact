@@ -1,5 +1,5 @@
 interface Tema{
-    id:number;
+    id: number;
     descricao: string;
 }
 export default Tema;

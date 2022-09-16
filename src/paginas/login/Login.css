@@ -1,16 +1,27 @@
-.textos {
-    font-weight: bold !important;
-}
+.textos1{
+    font-weight: bold!important;
+    
+    }
 
-.img {
-    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+.imagem{
+    background-image: url(https://www.lance.com.br/files/article_main/uploads/2019/09/03/5d6eb684c5484.jpeg);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
-    background-Size: cover;
+    background-size: cover;
     background-position: center;
+    }
+
+.text-decorator-none{
+    text-decoration: none;
 }
 
-.text-decorator-none {
-    text-decoration: none;
+.fundo{
+    /* background: linear-gradient(36deg, #5c1359 5%, #be0606 89%); */
+    background: linear-gradient(-56deg, #5c1359 9%, #9e1a1a 89%);
+}
+
+.corEnter{
+    color: whitesmoke!important;
+    font-weight: bold!important;
 }
