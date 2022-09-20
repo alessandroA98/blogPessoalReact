@@ -39,7 +39,7 @@ function Navbar() {
                 <Link to="/home" className="text-decorator-none">
                     <Box className='cursor' >
                         <Typography className='title' variant="h5">
-                            BlogPessoal
+                            ALE
                         </Typography>
                     </Box>
                 </Link>

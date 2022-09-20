@@ -81,18 +81,16 @@ function Login() {
 
     return (
         <Grid container direction='row'  className='fundo' justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={6}>
-                <Box paddingX={20}>
+            <Grid alignItems='center' xs={6} className='loginLeft'>
+                <Box paddingX={20} className='boxLogin'>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='corEnter'>Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='email' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                        <Box marginTop={2} textAlign='center'>
-                                                    
+                        <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='email' variant='outlined' name='usuario' margin='normal' fullWidth className='inputColor'/>
+                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth className='inputColor' />
+                        <Box marginTop={2} textAlign='center'>                     
                             <Button type='submit' variant='contained' color='primary'>
                                 Logar
-                            </Button>
-                            
+                            </Button>                            
                         </Box>
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2}>
@@ -106,7 +104,7 @@ function Login() {
                     </Box>
                 </Box>
             </Grid>
-            <Grid xs={6} className='imagem'>
+            <Grid xs={5} className='imagem'>
 
             </Grid>
         </Grid>

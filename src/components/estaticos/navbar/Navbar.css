@@ -1,13 +1,30 @@
 .cursor{
     cursor:pointer;
-    color: white;
-    
+    color: black;   
+    font-weight: 700 !important;
+    text-shadow: 0px 1px 3px white !important;
+}
+.cursor:hover{
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+    border-bottom: 2px solid white;
+}
+.title{  
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+    text-shadow: 3px 2px 3px white !important;
+}
+.title:hover{
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+    border-bottom: 2px solid white;
 }
 .text-decorator-none{
     text-decoration: none;
     
 }
 .container{
-    background-image: linear-gradient(#EC33B2 10%,
-    #000131 70%);
+background-image: linear-gradient(to top, #bd3f95 3%, #F7B4E4 60%);
+display: flex;
+justify-content: space-around;
 }
