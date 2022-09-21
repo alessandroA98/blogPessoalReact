@@ -46,11 +46,12 @@ function Home() {
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h5" align="center" className='subTitulo'>Adicione uma Tema e após, uma Postagem para relacionar-los</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <ModalPostagem />
-                        </Box>
+                        
                         <Link to="/posts" className="text-decorator-none">
                             <Button variant="outlined" className='btn'>Ver Postagens</Button>
+                        </Link>
+                        <Link to="/temas" className="text-decorator-none">
+                            <Button variant="outlined" className='btn'>Ver Temas</Button>
                         </Link>
                     </Box>
                 </Grid>

@@ -1,3 +1,11 @@
 .text-decorator-none {
     text-decoration: none;
 }
+.gridPost{
+    margin: 16px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+.modalPost{
+    margin:5rem 10rem;
+}
