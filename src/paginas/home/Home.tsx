@@ -2,14 +2,12 @@ import React, { useEffect } from 'react';
 import { Typography, Grid, Button } from '@material-ui/core';
 import { Box } from '@mui/material'
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
-import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import './Home.css';
 import { useNavigate, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
-import img1 from '../../components/imagens/rick-m.png'
-import CadastroTema from '../../components/temas/cadastroTema/CadastroTema';
+import Perfil from '../../paginas/perfil/Perfil';
 
 
 
@@ -59,6 +57,9 @@ function Home() {
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
+                </Grid>
+                <Grid xs={6} className='postagens'>
+                    <Perfil />
                 </Grid>
             </Grid>
         </>
