@@ -60,21 +60,11 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Link>
-                    <Link to="formularioTema" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" >
-                                cadastrar tema
-                            </Typography>
-                        </Box>
-                    </Link>
-
                     <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" >
                             logout
                         </Typography>
                     </Box>
-
-
                 </Box>
 
             </Toolbar>
