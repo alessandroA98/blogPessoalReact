@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { AppBar, Tab, Tabs, Typography } from '@material-ui/core';
 import { Box } from '@mui/material'
 import { TabContext, TabPanel } from '@material-ui/lab';
@@ -7,17 +7,17 @@ import './TabPostagem.css';
 
 
 function TabPostagem() {
-    const [value, setValue] = useState('1')
-    function handleChange(e: React.ChangeEvent<{}>, newValue: string){
-        setValue(newValue);
-    }
+  const [value, setValue] = useState('1')
+  function handleChange(e: React.ChangeEvent<{}>, newValue: string) {
+    setValue(newValue);
+  }
   return (
     <>
       <TabContext value={value}>
         <AppBar position="static" className='barra-menu'>
-          <Tabs centered indicatorColor="secondary" onChange={handleChange}>
-            <Tab label="Todas as postagens" value="1"/>
-            <Tab label="Sobre-nós" value="2" />
+          <Tabs centered onChange={handleChange}>
+            <Tab label="Todas as postagens" value="1" className='colorTab' />
+            <Tab label="Sobre-mim" value="2" className='colorTab' />
           </Tabs>
         </AppBar>
         <TabPanel value="1" >
@@ -26,8 +26,21 @@ function TabPostagem() {
           </Box>
         </TabPanel>
         <TabPanel value="2">
-          <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
-          <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ut eveniet natus totam et, voluptate dicta tempore alias, odio nobis non eius cupiditate minima inventore pariatur! Ipsum itaque consectetur voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit consequuntur suscipit fugiat, nam quis quod quaerat veritatis et, vel ratione beatae, facere neque! Quo animi porro voluptate saepe deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci, officia aut quidem dolorum deserunt iure dolorem doloribus velit nobis quas consequatur at ullam odit, nesciunt est nulla nihil excepturi!</Typography>
+          <Typography variant="h5" component="h5" align="center" className="titulo">Sobre-mim</Typography>
+          <Typography variant="body1" align="justify" className="sobreMim">
+            <p>
+              Olá, me chamo alessandro Nascimento Assunção, tenho 24 anos e moro em São Miguel Paulista - SP. nas horas vagas gosto de passear com meus cachorros, estudar programação e inglês, assistir filmes, series e jogar videogame.
+            </p>
+            <p>
+              Atualmente estou somente fazendo faculdade de analise e desenvolvimento de sistemas pelo Centro Universitario das Américas e estudando inglês.
+            </p>
+            <p>
+              Tenho conhecimento em algumas tecnologias como React.js, Springboot, Java, JavaScript, CSS e HTML, MySql, Selenium-IDE e Insomnia. algumas um pouco mais basicas e outras mais avançadas.
+            </p>
+            <p>
+              Estou em transição de carreira de ajudante geral e em busca da minha primeira oportunidade na area de tecnologia, seja como um estagiario ou como um desenvolvedor junior
+            </p>
+          </Typography>
         </TabPanel>
       </TabContext>
     </>

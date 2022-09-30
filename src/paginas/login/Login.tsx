@@ -6,78 +6,80 @@ import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import './Login.css';
 import { useDispatch } from 'react-redux';
-import { addToken } from '../../store/tokens/actions';
+import { addToken, addId } from '../../store/tokens/actions';
 import { toast } from 'react-toastify';
 
 
 function Login() {
-    // redireciona o usuário para determinada pagina
-    let navigate = useNavigate();
-    const dispatch = useDispatch();
 
-    // const [token, setToken] = useLocalStorage('token_bp')
-    // token_bp: "Basic"
+    let history = useNavigate()
 
-    // Hooks que vao manipular o nosso local storage para gerar token
-    const [token, setToken] = useState ('');
+    const dispatch = useDispatch()
 
-    // useState defina como uma determinada variavel será inicializada quando o comp. for renderizado  
-    const [userLogin, setUserLogin] = useState<UserLogin>(
-        {
-            id: 0,
-            nome: "",
-            usuario: "",
-            foto: "",
-            senha: "",
-            token: ""
+    const [token, setToken] = useState('')
+
+    const [userLogin, setUserLogin] = useState<UserLogin>({
+        id: 0,
+        nome: "",
+        usuario: "",
+        senha: "",
+        foto: "",
+        token: ""
+    })
+
+    // Crie mais um State para pegar os dados retornados a API
+    const [respUserLogin, setRespUserLogin] = useState<UserLogin>({
+        id: 0,
+        nome: '',
+        usuario: '',
+        senha: '',
+        token: '',
+        foto: ""
+    })
+
+    useEffect(() => {
+        if (token !== "") {
+            dispatch(addToken(token))
+            history('/home')
         }
-        )
+    }, [token])
 
-            // Função que junto com a setUserLogin irá atualizar o valor inicial da userLogin
-        function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+    function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+        setUserLogin({
+            ...userLogin,
+            [e.target.name]: e.target.value
+        })
+    }
 
-            setUserLogin({
-                ...userLogin, // ... é um operador (spread operator)
-                [e.target.name]: e.target.value
-            })
+    useEffect(() => {
+        if (respUserLogin.token !== "") {
+
+            // Verifica os dados pelo console (Opcional)
+            console.log("Token: " + respUserLogin.token)
+            console.log("ID: " + respUserLogin.id)
+
+            // Guarda as informações dentro do Redux (Store)
+            dispatch(addToken(respUserLogin.token))
+            dispatch(addId(respUserLogin.id.toString()))    // Faz uma conversão de Number para String
+            history('/home')
         }
+    }, [respUserLogin.token])
 
-            // Hook de efeito colateral, sempre executa uma função quando o que estiver no seu Array é ALTERADO?
-            useEffect(()=>{
-                if(token != ''){
-                    dispatch(addToken(token));
-                    navigate('/home')
-                }
-            }, [token])
+    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
+        e.preventDefault()
 
-        async function onSubmit(e: ChangeEvent<HTMLFormElement>){
-            e.preventDefault();
-            try{
-                await login(`/usuarios/logar`, userLogin, setToken)
-                
-                toast.success('Usuário logado com sucesso', {
-                    position: "top-right",
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: false,
-                    theme: 'colored',
-                    progress: undefined,
-                });
-            }catch(error){
-                toast.error('Dados do usuário inconsistentes. Erro ao logar!', {
-                    position: "top-right",
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: false,
-                    theme: 'colored',
-                    progress: undefined,
-                });  
-            }
+        try {
+
+            /* Se atente para a Rota de Logar, e também substitua o método
+            setToken por setRespUserLogin */
+
+            await login(`/usuarios/logar`, userLogin, setRespUserLogin)
+            alert("Usuário logado com sucesso")
+
+        } catch (error) {
+            alert("Dados do usuário inconsistentes")
         }
+    }
 
     return (
         <Grid container direction='row'  className='fundo' justifyContent='center' alignItems='center'>

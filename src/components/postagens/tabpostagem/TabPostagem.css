@@ -1,3 +1,11 @@
 .barra-menu{
     background: #01002A !important;
+    height: 6vh;
+}
+.sobreMim{
+    padding:0px 20% !important;
+}
+.colorTab{
+    color: white !important;
+    font-size: 1em !important;
 }

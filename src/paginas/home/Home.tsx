@@ -37,6 +37,9 @@ function Home() {
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+                <Grid xs={2}>
+                    <Perfil />
+                </Grid>
                 <Grid alignItems="center" item xs={5} className='homeBox'>
                     <Box className='homebox'>
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
@@ -53,13 +56,10 @@ function Home() {
                         </Link>
                     </Box>
                 </Grid>
-                <Grid item xs={6} className='homeImg'>
+                <Grid item xs={5} className='homeImg'>
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
-                </Grid>
-                <Grid xs={6} className='postagens'>
-                    <Perfil />
                 </Grid>
             </Grid>
         </>
