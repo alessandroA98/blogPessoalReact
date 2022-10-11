@@ -1,25 +1,19 @@
+.fundo {
+    background-image: linear-gradient(35deg, #FB5701, #c09e25, #869986, #B3F8DA, #97a9e9);;
+    height: 100vh;
+    width: 100Vw;
+}
 .textos {
     font-weight: bold !important;
-}
-
-.imagem {
-    background-image: url(https://static.alphacoders.com/alpha_system_360.png);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 20rem;
-    background-position: center;
 }
 
 .text-decorator-none {
     text-decoration: none;
 }
 
-.fundo {
-    background-image: linear-gradient(to right, #C3128B 2%, #F7B4E4 50%);
-}
 
 .boxLogin {
-    background: #f7b4e452;
+    background: #f8f1f621;
     box-shadow: 0px 0px 5px 0px white;
     margin-right: 10px;
     border-radius: 5px;
@@ -27,6 +21,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    backdrop-filter: blur(10px);
 }
 .inputColor{
     background-color: white;
