@@ -51,13 +51,15 @@ function ListaPostagem() {
 
   return (
     <>
-          <Grid container xs={12}>
-            <Grid xs={6}>
-      {
-        posts.map(post => (
-
-
-
+      <Grid container xs={12} >
+        <Grid xs={6} className='gridPost'>
+          <Box className='modalPost'>
+            <ModalPostagem />
+          </Box>
+        </Grid>
+        {
+          posts.map(post => (
+            <Grid xs={6} className=''>
               <Box m={2} >
                 <Card variant="outlined">
                   <CardContent>
@@ -95,16 +97,10 @@ function ListaPostagem() {
                   </CardActions>
                 </Card>
               </Box>
-        ))
-      }
+            </Grid>
+          ))
+        }
       </Grid>
-
-      <Grid xs={5} className='gridPost'>
-        <Box className='modalPost'>
-          <ModalPostagem />
-        </Box>
-      </Grid>
-    </Grid>
     </>
   )
 }
