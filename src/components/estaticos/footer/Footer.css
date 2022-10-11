@@ -1,19 +1,12 @@
 .box1 {
-    height: 120px;
+    height: 10vh;
 }
-
 .box2 {
-    height: 60px;
-}
-
-.RSocial {
-    font-size: 60px !important;
-    color: white;
-}
-
-.texto {
-    color: white;
+    height: 5vh;
 }
 .container-footer{
     background-image: linear-gradient(#F7B4E4 3%, #bd3f95 60%);
+}
+.redes{
+    color: black;
 }

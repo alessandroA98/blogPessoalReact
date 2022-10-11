@@ -26,7 +26,7 @@ function TabPostagem() {
           </Box>
         </TabPanel>
         <TabPanel value="2">
-          <Typography variant="h5" component="h5" align="center" className="titulo">Sobre-mim</Typography>
+          <Typography variant="h5" component="h5" align="center" >Sobre-mim</Typography>
           <Typography variant="body1" align="justify" className="sobreMim">
             <p>
               Olá, me chamo alessandro Nascimento Assunção, tenho 24 anos e moro em São Miguel Paulista - SP. nas horas vagas gosto de passear com meus cachorros, estudar programação e inglês, assistir filmes, series e jogar videogame.

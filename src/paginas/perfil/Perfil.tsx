@@ -54,8 +54,14 @@ function Perfil() {
         }
     }, [id])
 
+
+    
+
     return (
         <Box className='card-principal'>
+            <div className='perfil' >
+            </div>
+            
             <div className='imgPerfil'>
                 <img src={user.foto} alt="" />
                 <h1>{user.nome}</h1>

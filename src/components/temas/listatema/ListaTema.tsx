@@ -51,7 +51,7 @@ function ListaTema() {
 
   return (
 
-    <Grid container xs={12}>
+    <Grid container xs={12} justifyContent='center'>
       <Grid xs={5} justifyContent='column'>
       {
         temas.map(tema => (
@@ -89,7 +89,7 @@ function ListaTema() {
         ))
       }
       </Grid>
-      <Grid xs={5} >
+      <Grid xs={5} mt={4} >
         <CadastroTema />
 
       </Grid>

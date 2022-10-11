@@ -1,8 +1,7 @@
 .cursor{
     cursor:pointer;
-    color: black;   
+    color: white;   
     font-weight: 700 !important;
-    text-shadow: 0px 1px 3px white !important;
 }
 .cursor:hover{
     color: white !important;
@@ -12,7 +11,6 @@
 .title{  
     font-weight: 700 !important;
     font-size: 2rem !important;
-    text-shadow: 3px 2px 3px white !important;
 }
 .title:hover{
     color: white !important;
@@ -24,7 +22,7 @@
     
 }
 .container{
-background-image: linear-gradient(to top, #bd3f95 3%, #F7B4E4 60%);
+background: #869986 !important;
 display: flex;
 justify-content: space-around;
 }

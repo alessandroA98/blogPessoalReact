@@ -1,13 +1,23 @@
 .card-principal{
-    background-color: darkmagenta;
+    background-color: rgba(139, 0, 139, 0.158);
+    
     position: absolute;
     top: 0px;
     left: 0px;
     width: 15vw;
-    height: 101vh;
+    height: calc(100vh + 2px );
 }
 .imgPerfil img{
 width: 100px;
 height: 100px;
 border-radius: 50%;
+}
+.perfil{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    float: right;
+}
+.none{
+    display: none;
 }
