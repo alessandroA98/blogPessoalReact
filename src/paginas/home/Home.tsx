@@ -39,8 +39,8 @@ function Home() {
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={5} className='homeBox'>
                     <Box className='homebox'>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Blog do Ale</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Blog do Ale!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Olá</Typography>
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h5" align="center" className='subTitulo'>aqui é um espaço para comunicação. Você pode adicionar um tema para discussão e uma postagem referente algum tema.</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
