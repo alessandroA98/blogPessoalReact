@@ -20,7 +20,7 @@ function Footer() {
         <Grid alignItems="center" item xs={12} className='container-footer'>
             <Box className='box1'>
                 <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                    <Typography align="center" gutterBottom className='textos'>Siga-me nas redes sociais </Typography>
+                        <Typography align="center" gutterBottom className='textos colorF'>Siga-me nas redes sociais </Typography>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
                     <a href="" target="_blank">
@@ -34,9 +34,9 @@ function Footer() {
                     </a>
                 </Box>
             </Box>
-            <Box className='box2'>
+            <Box className=' box2'>
                 <Box paddingTop={1}>
-                    <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© Alessandro 2022 Copyright</Typography>
+                        <Typography variant="subtitle2" align="center" gutterBottom className='textos colorF' >© Alessandro 2022 Copyright</Typography>
                 </Box>
             </Box>
         </Grid>

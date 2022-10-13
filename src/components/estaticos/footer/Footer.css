@@ -5,8 +5,8 @@
     height: 5vh;
 }
 .container-footer{
-    background-image: linear-gradient(#F7B4E4 3%, #bd3f95 60%);
+    background: black;
 }
-.redes{
-    color: black;
+.redes, .colorF{
+    color: #fff;
 }

@@ -16,6 +16,7 @@ import store from './store/store';
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './App.css';
+import NotFound from './notFound/NotFound';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 
           <Routes>
 
+            <Route path="*" element={<NotFound />} />
             <Route path="/" element={<Login />} />
 
             <Route path="/login" element={<Login />} />

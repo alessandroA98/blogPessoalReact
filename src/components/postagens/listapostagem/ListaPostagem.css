@@ -1,6 +1,27 @@
 .text-decorator-none {
     text-decoration: none;
 }
-.gridPost{
-    padding: 4rem 0px 0px 12rem;
+
+.novoPost {
+    margin-top: 6vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    padding: 5em 10em;
+}
+
+
+.espacoCaixa {
+    padding-top: 6vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.sombraCaixa {
+    box-shadow: 5px 5px 10px #0f0;
+}
+
+.fullPage {
+    background-image: linear-gradient(90deg, #c9f05f, black 90%);
+    min-height: 100vh;
+    padding-bottom: 10vh;
 }

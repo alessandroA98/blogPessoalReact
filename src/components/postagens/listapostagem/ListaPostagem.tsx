@@ -50,17 +50,16 @@ function ListaPostagem() {
   }, [posts.length])
 
   return (
-    <>
-      <Grid container xs={12} >
-        <Grid xs={6} className='gridPost'>
-          <Box className='modalPost'>
+      <Grid container xs={12} className='fullPage'>
+        <Grid xs={5} className='novoPost'>
+          <Box >
             <ModalPostagem />
           </Box>
-        </Grid>
+        </Grid >
         {
           posts.map(post => (
-            <Grid xs={6} className=''>
-              <Box m={2} >
+            <Grid xs={5} className='espacoCaixa'>
+              <Box className='sombraCaixa'>
                 <Card variant="outlined">
                   <CardContent>
                     <Typography color="textSecondary" gutterBottom>
@@ -101,7 +100,6 @@ function ListaPostagem() {
           ))
         }
       </Grid>
-    </>
   )
 }
 

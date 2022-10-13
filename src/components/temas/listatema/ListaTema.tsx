@@ -51,11 +51,15 @@ function ListaTema() {
 
   return (
 
-    <Grid container xs={12} justifyContent='center'>
-      <Grid xs={5} justifyContent='column'>
+    <Grid container xs={12} className='fullPage ' >
+      <Grid xs={5} className='formCaixa'>
+        <CadastroTema />
+
+      </Grid>
       {
         temas.map(tema => (
-            <Box m={2} >
+          <Grid xs={5} className='espacoCaixa' >
+            <Box className='sombraCaixa' >
               <Card variant="outlined">
                 <CardContent>
                   <Typography color="textSecondary" gutterBottom>
@@ -86,13 +90,9 @@ function ListaTema() {
                 </CardActions>
               </Card>
             </Box>
+      </Grid>
         ))
       }
-      </Grid>
-      <Grid xs={5} mt={4} >
-        <CadastroTema />
-
-      </Grid>
     </Grid>
 
   );
