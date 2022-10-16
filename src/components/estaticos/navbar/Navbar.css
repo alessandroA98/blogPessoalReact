@@ -22,3 +22,10 @@ display: flex;
 justify-content: space-around;
 height: 10vh;
 }
+#logoImg img{
+    width: 50px !important;
+    height: 50px !important;
+}
+#logoImg img:hover {
+    border-bottom: 3px solid #0f0 ;
+}

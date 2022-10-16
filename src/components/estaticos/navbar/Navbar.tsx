@@ -8,6 +8,7 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { addToken } from '../../../store/tokens/actions';
 import { toast } from 'react-toastify';
 import './Navbar.css'
+import Logo from '../../imagens/logo.png'
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -38,9 +39,10 @@ function Navbar() {
             <Toolbar className='container'>
                 <Link to="/home" className="text-decorator-none">
                     <Box className='cursor' >
-                        <Typography className='title' variant="h5">
-                            ALE
-                        </Typography>
+                        <div id='logoImg'>
+                            <img src={Logo} alt="" />
+                        </div>
+                      
                     </Box>
                 </Link>
 
