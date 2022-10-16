@@ -1,17 +1,49 @@
-.barra-menu{
+.barra-menu {
     background: #000 !important;
     height: 7vh;
 }
-.sobreMim{
-    padding:0px 20% !important;
-    color: #fff;
+
+.descricao {
+    padding: 0px 20% !important;
+    color: #000;
 }
-.colorTab{
+
+.sobreMim {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 10px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgAnimais {
+    margin: 0px 20%;
+    display: flex;
+}
+
+.imgAnimais div {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.colorTab {
     color: #fff !important;
     font-size: 1em !important;
     font-weight: 600 !important;
 }
+
 .colorTab:hover {
     color: #0f0 !important;
     text-shadow: 0px 5px 10px #fff !important;
+}
+.faixaSub{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
 }
