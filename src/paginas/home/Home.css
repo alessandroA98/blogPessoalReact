@@ -1,5 +1,5 @@
 .caixa{
-    background-image: linear-gradient(90deg, #c9f05f ,  black 90%);
+    background-image: linear-gradient(90deg, #c9f05f 15% ,  black 90%);
     border-top: 3px solid black;
 }
 
@@ -47,5 +47,15 @@ background-image: linear-gradient(90deg, #c9f05f, black 90%);
     background-size: 50vh;
     background-position: center;
     background-repeat: no-repeat;
+    margin-right: -8vh !important;
+}
+.homeBox{
+    padding: 10vh 2vh;
+    background-color: #fff;
+    border: 3px #000 solid;
+    background-color: #c9f05fb4;
+    border-left: none;
+border-bottom-right-radius: 15px;
+border-top-right-radius: 15px;
 }
 

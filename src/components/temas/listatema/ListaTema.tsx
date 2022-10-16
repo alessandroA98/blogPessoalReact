@@ -13,10 +13,10 @@ import CadastroTema from '../cadastroTema/CadastroTema';
 
 function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([])
-  let navigate = useNavigate();
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
   );
+  let navigate = useNavigate();
 
 
   useEffect(() => {
@@ -46,7 +46,9 @@ function ListaTema() {
 
 
   useEffect(() => {
+
     getTema()
+
   }, [temas.length])
 
   return (
@@ -90,7 +92,7 @@ function ListaTema() {
                 </CardActions>
               </Card>
             </Box>
-      </Grid>
+          </Grid>
         ))
       }
     </Grid>
