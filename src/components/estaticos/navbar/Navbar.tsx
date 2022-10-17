@@ -8,7 +8,7 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { addToken } from '../../../store/tokens/actions';
 import { toast } from 'react-toastify';
 import './Navbar.css'
-import Logo from '../../imagens/logo.png'
+import Logo from '../../imagens/livro.png'
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(

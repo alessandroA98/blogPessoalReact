@@ -49,12 +49,15 @@ function ListaPostagem() {
 
   }, [posts.length])
 
+
   return (
       <Grid container xs={12} className='fullPage'>
         <Grid xs={5} className='novoPost'>
+        <Link to='/formularioPostagem' className='text-decorator-none'>
           <Box >
             <ModalPostagem />
           </Box>
+        </Link>
         </Grid >
         {
           posts.map(post => (

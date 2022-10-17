@@ -65,7 +65,6 @@ function CadastroTema() {
             console.log("tema " + JSON.stringify(tema))
     
             if (id !== undefined) {
-                console.log(tema)
                 put(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
