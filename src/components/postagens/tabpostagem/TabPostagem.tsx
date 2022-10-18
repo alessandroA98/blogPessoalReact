@@ -18,16 +18,11 @@ function TabPostagem() {
       <TabContext value={value}>
         <AppBar position="static" className='barra-menu'>
           <Tabs centered onChange={handleChange}>
-            <Tab label="Todas as postagens" value="1" className='colorTab' />
-            <Tab label="Sobre-mim" value="2" className='colorTab' />
+            <Tab label="Sobre-mim" value="1" className='colorTab' />
+            <Tab label="Outros Projetos" value="2" className='colorTab' />
           </Tabs>
         </AppBar>
-        <TabPanel value="1" >
-          <Box display="flex" flexWrap="wrap" justifyContent="center">
-            <ListaPostagem />
-          </Box>
-        </TabPanel>
-        <TabPanel value="2">
+        <TabPanel value="1">
           <div className='sobreMim'>
             <Typography variant="h3" component="h1" className='faixaSub' >Sobre-mim</Typography>
             <Typography variant="body1" align="justify" className="descricao">
@@ -57,6 +52,11 @@ function TabPostagem() {
               </div>
             </div>
           </div>
+        </TabPanel>
+        <TabPanel value="2" >
+          <Box display="flex" flexWrap="wrap" justifyContent="center">
+            <ListaPostagem />
+          </Box>
         </TabPanel>
       </TabContext>
     </>

@@ -51,30 +51,40 @@ function ListaPostagem() {
 
 
   return (
-      <Grid container xs={12} className='fullPage'>
-        <Grid xs={5} className='novoPost'>
+    <Grid container xs={12} className='fullPage'>
+      <Grid xs={5} className='novoPost'>
         <Link to='/formularioPostagem' className='text-decorator-none'>
           <Box >
             <ModalPostagem />
           </Box>
         </Link>
-        </Grid >
-        {
-          posts.map(post => (
-            <Grid xs={5} className='espacoCaixa'>
-              <Box className='sombraCaixa'>
-                <Card variant="outlined">
+      </Grid >
+      {
+        posts.map(post => (
+          <Grid xs={5} className='espacoCaixa'>
+            <Box className='sombraCaixa'>
+              <Card variant="outlined" className='card' >
+                <img src={post.foto} height='200px' />
+                <div>
                   <CardContent>
-                    <Typography color="textSecondary" gutterBottom>
-                      Postagens
+                    <Typography align='center' gutterBottom>
+                      <span className='cardParagrafo'>
+                        Postagem
+                      </span>
                     </Typography>
                     <Typography variant="h5" component="h2">
+                      <span className='cardParagrafo'>Titulo:
+                      </span>
                       {post.titulo}
                     </Typography>
                     <Typography variant="body2" component="p">
+                      <span className='cardParagrafo'>
+                        Descrição:
+                      </span>
                       {post.texto}
                     </Typography>
                     <Typography variant="body2" component="p">
+                      <span className='cardParagrafo'>Tema:</span>
                       {post.tema?.descricao}
                     </Typography>
                   </CardContent>
@@ -97,12 +107,13 @@ function ListaPostagem() {
                       </Link>
                     </Box>
                   </CardActions>
-                </Card>
-              </Box>
-            </Grid>
-          ))
-        }
-      </Grid>
+                </div>
+              </Card>
+            </Box>
+          </Grid>
+        ))
+      }
+    </Grid>
   )
 }
 

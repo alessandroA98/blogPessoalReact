@@ -27,7 +27,7 @@ function App() {
       <Router>
         <Navbar />
 
-        <div style={{ minHeight: '100vh' }}>
+        <div style={{ minHeight: '90vh' }}>
 
           <Routes>
 

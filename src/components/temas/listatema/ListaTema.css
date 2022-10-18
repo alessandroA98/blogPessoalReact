@@ -3,7 +3,11 @@
 }
 
 .formCaixa {
-    margin-top: 6vh;
+    display: grid;
+    margin-top: 14vh;
     margin-right: 3vw;
     margin-left: 3vw;
+    height: 10vh;
+    align-items: center !important;
+    justify-content: center !important;
 }

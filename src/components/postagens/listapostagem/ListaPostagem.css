@@ -1,9 +1,9 @@
 .text-decorator-none {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .novoPost {
-    margin-top: 6vh;
+    margin-top: 2.5vh;
     margin-right: 3vw;
     margin-left: 3vw;
     padding: 5em 10em;
@@ -22,6 +22,25 @@
 
 .fullPage {
     background-image: linear-gradient(90deg, #c9f05f, black 90%);
-    min-height: 100vh;
-    padding-bottom: 10vh;
+    min-height: 90vh;
+}
+.card{
+    display: flex !important;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.card img{
+}
+.cardParagrafo{
+    margin-top: 0.8vh !important;
+    margin-right: 0.8vh !important;
+    font-weight: 700;
+    font-size: 14px !important;
+    display: inline-block !important;
+}
+.cadastro{
+    background-color: #fff;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 10vh;
 }

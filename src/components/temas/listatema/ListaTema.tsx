@@ -54,10 +54,14 @@ function ListaTema() {
   return (
 
     <Grid container xs={12} className='fullPage ' >
-      <Grid xs={5} className='formCaixa'>
-        <CadastroTema />
-
+      <Grid xs={5} className='formCaixa' >
+        <Link to='/formularioTema' className='text-decorator-none'>
+          <Button variant="contained" className="btn" >
+            Criar cadastro
+          </Button>
+        </Link>
       </Grid>
+
       {
         temas.map(tema => (
           <Grid xs={5} className='espacoCaixa' >
