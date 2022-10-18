@@ -24,7 +24,7 @@ function TabPostagem() {
         </AppBar>
         <TabPanel value="1">
           <div className='sobreMim'>
-            <Typography variant="h3" component="h1" className='faixaSub' >Sobre-mim</Typography>
+            <Typography variant="h5" component="h1" className='faixaSub' >Sobre-mim</Typography>
             <Typography variant="body1" align="justify" className="descricao">
               <p>
                 Olá, me chamo alessandro Nascimento Assunção, tenho 24 anos e moro em São Miguel Paulista - SP. nas horas vagas gosto de passear com meus cachorros, estudar programação e inglês, assistir filmes, series e jogar videogame.
@@ -39,15 +39,15 @@ function TabPostagem() {
                 Estou em transição de carreira de ajudante geral e em busca da minha primeira oportunidade na area de tecnologia, seja como um estagiario ou como um desenvolvedor junior
               </p>
             </Typography>
-            <Typography variant="h3" component="h1" className='faixaSub'> Pets </Typography>
+            <Typography variant="h5" component="h1" className='faixaSub'> Pets </Typography>
             <div className='imgAnimais'>
               <div >
-                <h1>Lindinha</h1>
+                <h3>Lindinha</h3>
                 <img src={lindinha} alt="cachorra shitzu" />
               </div>
 
               <div >
-                <h1>Maneirinho</h1>
+                <h3>Maneirinho</h3>
                 <img src={maneiro} alt="cachorro yorkshire" />
               </div>
             </div>

@@ -30,6 +30,9 @@
    align-items: center;
    flex-direction: column;
 }
+.imgAnimais img{
+    height: 500px;
+}
 
 .colorTab {
     color: #fff !important;

@@ -138,7 +138,7 @@ function CadastroPost() {
             <Grid xs={5} className='cadastro'>
 
                 <form onSubmit={onSubmit}>
-                    <Typography variant="h5" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
+                    <Typography variant="h5" component="h1" align="center" >Formulário de cadastro postagem</Typography>
 
 
                     <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" multiline placeholder='min 3 caracteres' fullWidth />
