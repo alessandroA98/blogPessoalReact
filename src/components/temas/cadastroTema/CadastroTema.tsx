@@ -110,7 +110,7 @@ function CadastroTema() {
         <Grid container className='fullPage' justifyContent='center'>
             <Grid xs={5} className='cadastro'>
                 <form onSubmit={onSubmit} className='formAlign'>
-                    <Typography variant="h5" component="h1" align="center" >Formulário de cadastro postagem</Typography>
+                    <Typography variant="h5" component="h1" align="center" >Formulário de cadastro tema</Typography>
 
 
                     <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" placeholder='min 5 caracteres' fullWidth />

@@ -1,4 +1,4 @@
-.imagem2{
+.imagem2 {
     background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
     background-repeat: no-repeat;
     width: 100vh;
@@ -7,10 +7,30 @@
     background-position: center;
 }
 
-.textos2{
+.textos2 {
     font-weight: bold !important;
 }
 
-.btnCancelar{
+.btnCancelar {
     margin-right: 20px !important;
+}
+
+.fundoBackground {
+    background-image: linear-gradient(90deg, #c9f05f, black 90%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullPage {
+    min-height: 100vh !important;
+}
+
+.formCadastro {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f1f669;
+    box-shadow: 0px 0px 5px 0px white;
+    backdrop-filter: blur(10px);
+    border: solid 3px #fff;
 }

@@ -1,8 +1,9 @@
 .fundo {
-    background-image: linear-gradient(35deg, #FB5701, #c09e25, #869986, #B3F8DA, #97a9e9);;
+    background-image: linear-gradient(90deg, #c9f05f, black 90%);
     height: 100vh;
     width: 100Vw;
 }
+
 .textos {
     font-weight: bold !important;
 }
@@ -13,7 +14,7 @@
 
 
 .boxLogin {
-    background: #f8f1f621;
+    background: #f8f1f669;
     box-shadow: 0px 0px 5px 0px white;
     margin-right: 10px;
     border-radius: 5px;
@@ -22,21 +23,25 @@
     justify-content: space-around;
     flex-direction: column;
     backdrop-filter: blur(10px);
+    border: solid 3px #fff;
 }
-.inputColor{
+
+.inputColor {
     background-color: white;
 }
-@media screen and (max-width: 768px) {
-    .imagem{
-        display:none
-    }
-        .loginLeft{
-            display: grid;
-            grid-template-columns: repeat(12);
-            grid-column: 12;
-        
 
-        }
-        .boxLogin{
-        }
+@media screen and (max-width: 768px) {
+    .imagem {
+        display: none
+    }
+
+    .loginLeft {
+        display: grid;
+        grid-template-columns: repeat(12);
+        grid-column: 12;
+
+
+    }
+
+    .boxLogin {}
 }

@@ -27,10 +27,10 @@ function TabPostagem() {
             <Typography variant="h5" component="h1" className='faixaSub' >Sobre-mim</Typography>
             <Typography variant="body1" align="justify" className="descricao">
               <p>
-                Olá, me chamo alessandro Nascimento Assunção, tenho 24 anos e moro em São Miguel Paulista - SP. nas horas vagas gosto de passear com meus cachorros, estudar programação e inglês, assistir filmes, series e jogar videogame.
+                Olá, me chamo alessandro Nascimento Assunção, tenho 24 anos e moro em São Miguel Paulista - SP. nas horas vagas gosto de passear com meus cachorros, estudar programação, assistir filmes, series e jogar videogame.
               </p>
               <p>
-                Atualmente estou somente fazendo faculdade de analise e desenvolvimento de sistemas pelo Centro Universitario das Américas e estudando inglês.
+                Recentemente terminei o Bootcamp da Generation Brasil de 3 meses, e atualmente, estou fazendo faculdade de analise e desenvolvimento de sistemas pelo Centro Universitario das Américas, estou no segundo semestre e estudando inglês.
               </p>
               <p>
                 Tenho conhecimento em algumas tecnologias como React.js, Springboot, Java, JavaScript, CSS e HTML, MySql, Selenium-IDE e Insomnia. algumas um pouco mais basicas e outras mais avançadas.
