@@ -1,5 +1,6 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Grid, TextField, Typography, Button } from '@material-ui/core';
+import { styled } from '@mui/material/styles'
 import { Box } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../../services/Service';
@@ -80,15 +81,25 @@ function Login() {
             alert("Dados do usuário inconsistentes")
         }
     }
-
     return (
         <Grid container direction='row'  className='fundo' justifyContent='center' alignItems='center'>
             <Grid alignItems='center'>
                 <Box paddingX={20} className='boxLogin'>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='corTextoBranco'>Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='email' variant='outlined' name='usuario' margin='normal' fullWidth className='inputColor'/>
-                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth className='inputColor' />
+                        <Typography variant='h3' gutterBottom component='h3' align='center' className='corTextoBranco' >Entrar</Typography>
+                        
+                        <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='email'
+                            variant="outlined" InputProps={{ inputProps: { style: { color: '#fff', border: '#fff' } }
+                        }} 
+                            focused name='usuario' margin='normal' fullWidth />
+
+
+                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant="outlined" name='senha' margin='normal' type='password' color='primary' focused InputProps={{
+                            inputProps: { style: { color: '#fff', border: '#fff' } }
+                        }} fullWidth />
+
+
+
                         <Box marginTop={2} textAlign='center'>                     
                             <Button type='submit' variant='contained' color='primary'>
                                 Logar
@@ -99,10 +110,12 @@ function Login() {
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center' className='corTextoBranco'>Não tem uma conta?</Typography>
                         </Box>
-                        <Link to='/cadastrousuario'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='corTextoBranco textos1'> <strong>
+                        <Link to='/cadastrousuario' className='text-decorator-none'>
+                            <Typography variant='subtitle1' gutterBottom align='center' className='corTextoBranco textos1'> <span>
+                                <strong>
                                  Cadastre-se
                                 </strong>
+                                </span> 
                                  </Typography>
                         </Link>
                         
