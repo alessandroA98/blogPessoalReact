@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { AppBar, Tab, Tabs, Typography } from '@material-ui/core';
 import { Box } from '@mui/material'
 import { TabContext, TabPanel } from '@material-ui/lab';
-import ListaPostagem from '../listapostagem/ListaPostagem';
 import './TabPostagem.css';
 import maneiro from '../../imagens/maneiro2.png'
 import lindinha from '../../imagens/lindinha2.png'
+import ListaProjetos from '../../projetos/listaProjetos/ListaProjetos';
 
 
 function TabPostagem() {
@@ -55,7 +55,7 @@ function TabPostagem() {
         </TabPanel>
         <TabPanel value="2" >
           <Box display="flex" flexWrap="wrap" justifyContent="center">
-            <ListaPostagem />
+            <ListaProjetos />
           </Box>
         </TabPanel>
       </TabContext>

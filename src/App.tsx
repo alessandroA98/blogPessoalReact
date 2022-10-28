@@ -17,13 +17,15 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './App.css';
 import NotFound from './notFound/NotFound';
+import PostProjetos from './components/projetos/postProjetos/PostProjetos';
+import ListaProjetos from './components/projetos/listaProjetos/ListaProjetos';
 
 
 function App() {
   return (
     <Provider store={store}>
       <ToastContainer />
-      
+
       <Router>
         <Navbar />
 
@@ -44,6 +46,7 @@ function App() {
 
             <Route path="/posts" element={<ListaPostagem />} />
 
+
             <Route path="/formularioPostagem" element={<CadastroPost />} />
 
             <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
@@ -56,6 +59,9 @@ function App() {
 
             <Route path="/deletarTema/:id" element={<DeletarTema />} />
 
+            <Route path="/formularioProjetos" element={<PostProjetos />} />
+
+            <Route path="/ListaProjetos" element={<ListaProjetos />} />
 
           </Routes>
         </div>
